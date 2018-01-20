@@ -1,122 +1,335 @@
 <!DOCTYPE html>
-<html>
-  <!-- Html Head Tag-->
-  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="John Doe">
-  <!-- Open Graph Data -->
-  <meta property="og:title" content="MyAndroid"/>
-  <meta property="og:description" content="" />
-  <meta property="og:site_name" content="Hexo"/>
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="http://yoursite.com"/>
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
+
+
+
   
 
-  <!-- Site Title -->
-  <title>Hexo</title>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  
-  <link rel="stylesheet" href="/css/style.dark.css">
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
 
-  <!-- Google Analytics -->
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Android开源项目及库," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="#MyAndroid自己总结的Android开源项目及库。 github排名 https://github.com/trending,github搜索：https://github.com/search 目录 UI UI 卫星菜单 节选器 下拉刷新 模糊效果 HUD与Toast 进度条 UI其它   动画 网络相关 响应式编程 地图 数据库 图像浏览及处理 视频音频处理 测试及调试 动态更新热更新">
+<meta name="keywords" content="Android开源项目及库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MyAndroid">
+<meta property="og:url" content="http://yoursite.com/2018/01/16/MyAndroid/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#MyAndroid自己总结的Android开源项目及库。 github排名 https://github.com/trending,github搜索：https://github.com/search 目录 UI UI 卫星菜单 节选器 下拉刷新 模糊效果 HUD与Toast 进度条 UI其它   动画 网络相关 响应式编程 地图 数据库 图像浏览及处理 视频音频处理 测试及调试 动态更新热更新">
+<meta property="og:updated_time" content="2018-01-16T14:01:34.270Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MyAndroid">
+<meta name="twitter:description" content="#MyAndroid自己总结的Android开源项目及库。 github排名 https://github.com/trending,github搜索：https://github.com/search 目录 UI UI 卫星菜单 节选器 下拉刷新 模糊效果 HUD与Toast 进度条 UI其它   动画 网络相关 响应式编程 地图 数据库 图像浏览及处理 视频音频处理 测试及调试 动态更新热更新">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/16/MyAndroid/"/>
+
+
+
+
+
+  <title>MyAndroid | Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-  <body>
-    <!-- Page Header -->
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
 
+  
+  
+    
+  
 
-<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="page-title with-background-image">
-          <p class="title">MyAndroid</p>
-          <p class="subtitle"></p>
-        </div>
-        <div class="site-menu with-background-image">
-          <ul>
-            
-              <li>
-                <a href="/">
-                  
-                  Home
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="/archives">
-                  
-                  Archives
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://github.com/<your-github-username>">
-                  
-                  Github
-                  
-                </a>
-              </li>
-            
-              <li>
-                <a href="mailto:<your-email-address>">
-                  
-                  Email
-                  
-                </a>
-              </li>
-            
-          </ul>
-        </div>
-      </div>
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
-</header>
 
-<article>
-  <div class="container typo">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-info text-muted">
-          
-            <!-- Author -->
-            <span class="author info">By John Doe</span>
-          
-          <!-- Date -->
-          <span class="date-time info">On
-            <span class="date">2018-01-16</span>
-            <span class="time">22:01:40</span>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/16/MyAndroid/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MyAndroid</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-16T21:26:03+08:00">
+                2018-01-16
+              </time>
+            
+
+            
+
+            
           </span>
+
           
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
-        <!-- Tags -->
-        
-          <div class="post-tags text-muted">
-            Tags: 
+      </header>
+    
 
-<a class="tag" href="/tags/Android开源项目及库/">#Android开源项目及库</a>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+      
 
-          </div>
-        
-        <!-- Post Main Content -->
-        <div class="post-content">
-          <h1 id="MyAndroid"><a href="#MyAndroid" class="headerlink" title="#MyAndroid"></a>#MyAndroid</h1><p>自己总结的Android开源项目及库。 github排名 <a href="https://github.com/trending" target="_blank" rel="noopener">https://github.com/trending</a>,github搜索：<a href="https://github.com/search" target="_blank" rel="noopener">https://github.com/search</a></p>
+      
+        <h1 id="MyAndroid"><a href="#MyAndroid" class="headerlink" title="#MyAndroid"></a>#MyAndroid</h1><p>自己总结的Android开源项目及库。 github排名 <a href="https://github.com/trending" target="_blank" rel="noopener">https://github.com/trending</a>,github搜索：<a href="https://github.com/search" target="_blank" rel="noopener">https://github.com/search</a></p>
 <h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
 <li><a href="#UI">UI</a><ul>
 <li><a href="#UI">UI</a></li>
@@ -689,42 +902,343 @@
 </li>
 </ul>
 
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android开源项目及库/" rel="tag"># Android开源项目及库</a>
+          
         </div>
-      </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/16/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
     </div>
   </div>
-</article>
 
 
+          </div>
+          
 
-    <!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <p class="copyright text-muted">
-          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
-          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
-        <p class="copyright text-muted">
-          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
-        </p>
-      </div>
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
-</footer>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="John Doe" />
+          <p class="site-author-name" itemprop="name">John Doe</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Tags</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
 
 
-    <!-- After Footer Scripts -->
-<script src="/js/highlight.pack.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
-    codeBlocks.forEach(function(block, index) {
-      hljs.highlightBlock(block);
-    });
-  });
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MyAndroid"><span class="nav-number">1.</span> <span class="nav-text">#MyAndroid</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">1.0.1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#具体内容"><span class="nav-number">1.0.2.</span> <span class="nav-text">具体内容 =============================</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#UI"><span class="nav-number">1.0.2.0.1.</span> <span class="nav-text">UI</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#卫星菜单"><span class="nav-number">1.0.2.0.2.</span> <span class="nav-text">卫星菜单</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#节选器"><span class="nav-number">1.0.2.0.3.</span> <span class="nav-text">节选器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#下拉刷新"><span class="nav-number">1.0.2.0.4.</span> <span class="nav-text">下拉刷新</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#模糊效果"><span class="nav-number">1.0.2.0.5.</span> <span class="nav-text">模糊效果</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HUD与Toast"><span class="nav-number">1.0.2.0.6.</span> <span class="nav-text">HUD与Toast</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#进度条"><span class="nav-number">1.0.2.0.7.</span> <span class="nav-text">进度条</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#UI其他"><span class="nav-number">1.0.2.0.8.</span> <span class="nav-text">UI其他</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动画"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">动画</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网络相关"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">网络相关</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#网络连接"><span class="nav-number">1.0.2.2.1.</span> <span class="nav-text">网络连接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#网络测试"><span class="nav-number">1.0.2.2.2.</span> <span class="nav-text">网络测试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#图像获取"><span class="nav-number">1.0.2.2.3.</span> <span class="nav-text">图像获取</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#响应式编程"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">响应式编程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#地图"><span class="nav-number">1.0.2.4.</span> <span class="nav-text">地图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库"><span class="nav-number">1.0.2.5.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图像浏览及处理"><span class="nav-number">1.0.2.6.</span> <span class="nav-text">图像浏览及处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#视频音频处理"><span class="nav-number">1.0.2.7.</span> <span class="nav-text">视频音频处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试及调试"><span class="nav-number">1.0.2.8.</span> <span class="nav-text">测试及调试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态更新热更新"><span class="nav-number">1.0.2.9.</span> <span class="nav-text">动态更新热更新</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消息推送与及时通讯"><span class="nav-number">1.0.2.10.</span> <span class="nav-text">消息推送与及时通讯</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#客户端"><span class="nav-number">1.0.2.10.1.</span> <span class="nav-text">客户端</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#服务器端"><span class="nav-number">1.0.2.10.2.</span> <span class="nav-text">服务器端</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完整项目"><span class="nav-number">1.0.2.11.</span> <span class="nav-text">完整项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件"><span class="nav-number">1.0.3.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#出名框架"><span class="nav-number">1.0.4.</span> <span class="nav-text">出名框架</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#其他"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#好的文章"><span class="nav-number">1.0.4.2.</span> <span class="nav-text">好的文章</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#收集android上开源的酷炫的交互动画和视觉效果"><span class="nav-number">1.0.5.</span> <span class="nav-text">收集android上开源的酷炫的交互动画和视觉效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#交互篇"><span class="nav-number">1.1.</span> <span class="nav-text">交互篇</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视觉篇"><span class="nav-number">1.2.</span> <span class="nav-text">视觉篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#UI资源"><span class="nav-number">1.2.1.</span> <span class="nav-text">UI资源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开发资源"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">开发资源</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#他人开源总结"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">他人开源总结</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#中文开发博客列表"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">中文开发博客列表</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
-  </body>
-</html>
 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
